@@ -1,0 +1,170 @@
+.LoginMain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .LoginInner {
+        border-radius: 8px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        height: 80%;
+        width: 30%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .LogoMain {
+            border-radius: 10px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+            height: 16vh;
+            width: 25%;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1vh;
+            margin-bottom: 3vh;
+            img {
+                height: 70%;
+                margin-bottom: -2vh;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: 4px;
+                font-family: "Pacifico", cursive;
+                margin-bottom: -1vh;
+            }
+        }
+
+        .loginMainInput {
+            height: 20%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            input {
+                border: 2px solid #053629;
+                border-radius: 8px;
+                height: 4vh;
+                padding-left: 10px;
+                font-size: 14px;
+                font-family: "Work Sans", sans-serif;
+                color: #053629;
+                font-weight: 600;
+            }
+        }
+
+        .LoginBtn {
+            width: 80%;
+            height: 5vh;
+            background-color: #053629;
+            border: none;
+            border-radius: 8px;
+            color: #FFEFD0;
+            font-family: "Work Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.3em;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            &:hover {
+                border: 2px solid #053629;
+                background-color: transparent;
+                color: #053629;
+                transition: 0.1s ease-in-out;
+            }
+        }
+
+        .Line {
+            margin: 20px 0;
+            width: 80%;
+            border-top: 2px solid #053629;
+        }
+
+        .SocialLoginButtons {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+
+            button {
+                width: 100%;
+                height: 5vh;
+                border: none;
+                border-radius: 8px;
+                color: #fff;
+                font-family: "Work Sans", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .gmail {
+                background-color: #4285F4; // Gmail color
+            }
+
+            .facebook {
+                background-color: #3b5998; // Facebook color
+            }
+
+            .instagram {
+                background-color: #E1306C; // Instagram color
+            }
+        }
+
+        .SocialIcons {
+            
+            // border: 1px solid black;
+            margin-top: 2vh;
+            display: flex;
+            width: 80%;
+            height: 5%;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .Copyright{
+                // border: 1px solid black;
+                font-size: 14px;
+                font-weight: 600;
+                width: 70%;
+            }
+            .favicons{
+                width: 30%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+                // border: 1px solid black;
+                a {
+                    color: #053629;
+                    font-size: 20px;
+                    transition: color 0.3s;
+                }
+                
+                a:hover {
+                    color: #FFEFD0;
+                }
+            }
+        }
+    }
+}
